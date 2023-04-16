@@ -14,7 +14,7 @@ class HomeScreen extends GetView<HomeController> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Home Screen"),
+        title: const Text("Simple GetX Project"),
         actions: [
           IconButton(
             onPressed: _goToLoginScreen,
