@@ -8,14 +8,26 @@ class LoginScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text("LogIn Screen")),
-      body:Column(
-        children: [],
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: const [
+            Text(
+              "Welcome to Login Screen...",
+              style: TextStyle(
+                fontSize: 24,
+                color: Colors.green,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ],
+        ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           Get.back();
         },
-        child: const Icon(Icons.add),
+        child: const Icon(Icons.arrow_back_ios_new),
       ),
     );
   }
